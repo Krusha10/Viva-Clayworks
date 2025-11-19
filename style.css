@@ -7,3 +7,25 @@ h1{
 	letter-spacing: -2px;
 	color: #FFFFFF;
 }
+
+h2{
+	font-size: 56px;
+	line-height: 120%;
+	font-weight: 700;
+	letter-spacing: -1px;
+	color: #000000;
+	margin-top: 0px;
+	margin-bottom: 16px;
+}
+
+/** Text over image */
+.image{
+	position: relative;
+	text-align: center;
+}
+
+.center{
+	position: absolute;
+	top: 50%;
+	transform: translate(0%, -50%);
+}
