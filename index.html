@@ -6,6 +6,8 @@
 	<title>Viva Clayworks | Home</title>
 
 	<!-- Styles (connect style.css sheet) --> 
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="layout.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 	<!-- Fonts -->
@@ -15,38 +17,44 @@
 
 </head>
 <body>
-	<header>
+	<header style="background-color: #32475E;">
 
-		<a href="index.html"><img src="Images/logo_img.svg" style="width: 277px;"></a>
+		<div class="nav">
+			<a href="index.html"><img src="Images/logo_img.svg" style="width: 30vw;"></a>
 
-		<nav>
-			<ul>
-				<li> <a href="index.html">Home</a> </li>
-				<li> <a href="Contact.html">Products & Services</a> </li>
-				<li> <a href="about.html">About</a> </li>
-				<li> <a href="Contact.html">Contact</a> </li>
-			</ul>
-		</nav>
+			<nav>
+				<ul>
+					<li> <a href="index.html" class="navigation">Home</a> </li>
+					<li> <a href="Contact.html" class="navigation">Products & Services</a> </li>
+					<li> <a href="about.html" class="navigation">About</a> </li>
+					<li> <a href="Contact.html" class="navigation">Contact</a> </li>
+				</ul>
+			</nav>
+		</div>
 
 	</header>
 
 	<!-- Hero Section -->
 	<section>
-		<div class="image">
-			<img src="Images/Viva_homepage_hero.jpg" style="width: 100%">
-			<h1 class="center">Viva Clayworks Pottery</h1>
+		<div class="">
+			<div class="image">
+				<img src="Images/Viva_homepage_hero.jpg" style="width: 100%">
+				<h1 class="center">Viva Clayworks Pottery</h1>
+			</div>
 		</div>
 	</section><!-- End Hero Section -->
 
 	<!-- Who we are section -->
-	<section>
-		<div><!-- Container -->
-			<div><!-- row -->
+	<section class="section-padding">
+		<div class="container"><!-- Container -->
+			<div class="row row-justify-center">
 				<h2>Who We Are</h2>
-				<div><!-- column text-->
+			</div>
+			<div class="row row-align-center"><!-- row -->
+				<div class="col col-lg-8"><!-- column text-->
 					<p>The Viva Clayworks team is a group of talented ‘cerama-siblings’ who have come together to create a phenomenal teaching studio. Our passion is clay and our joy is sharing our passion with you. We have 12 wheels and a ton of space to create in our Edmonton studio. If you want to sink your hands in the clay and learn pottery our studio is your creative home base.</p>
 				</div><!-- End column text -->
-				<div><!-- column image-->
+				<div class="col col-lg-4 card-img-wrap"><!-- column image-->
 					<img src="Images/Viva_homepage_1.jpg">
 				</div><!-- End column image -->
 			</div><!-- End row -->
@@ -54,67 +62,91 @@
 	</section>
 
 	<!-- What we offer section -->
-	<section class="dark-grey-bac">
-		<div><!-- Container -->
+	<section class="section-padding dark-blue-bac">
+		<div class="container"><!-- Container -->
 
-			<div><!-- row -->
+			<div class="row row-justify-center"><!-- row 1-->
 				<h2>What We Offer</h2>
+			</div><!-- End row 1-->
+
+			<div class="row row-align-center"><!-- row 2-->
 
 				<!-- What we offer 1 -->
-				<div><!-- Column -->
-					<div>
+				<div class="col col-lg-4"><!-- Column -->
+					<div class="card-img-wrap-2">
 						<img src="Images/Viva_homepage_offer_1.jpg">
+					</div>
+					<div>
 						<h3>Pottery Classes</h3>
 						<a href="products.html">Learn More</a>
 					</div>
 				</div><!-- End Column -->
 
 				<!-- What we offer 2 -->
-				<div><!-- Column -->
-					<div>
+				<div class="col col-lg-4"><!-- Column -->
+					<div class="card-img-wrap-2">
 						<img src="Images/Viva_homepage_offer_2.jpg">
+					</div>
+					<div>
 						<h3>Firing</h3>
 						<a href="products.html">Learn More</a>
 					</div>
 				</div><!-- End Column -->
 
 				<!-- What we offer 3 -->
-				<div><!-- Column -->
-					<div>
+				<div class="col col-lg-4"><!-- Column -->
+					<div class="card-img-wrap-2">
 						<img src="Images/Viva_homepage_offer_3.jpg">
+					</div>
+					<div>
 						<h3>Shop</h3>
 						<a href="products.html">Learn More</a>
 					</div>
 				</div><!-- End Column -->
 
-			</div><!-- End row -->
+			</div><!-- End row 2-->
 
 		</div><!-- End Container -->
 	</section><!-- End What we offer section -->
 
 	<!-- Quote Section -->
-	<section>
-		<div><!-- row -->
-			<div><!-- Column -->
-				<p style="font-size: 45px;">Experience is the teacher of all things</p>
-				<p style="font-size: 25px;">- Julius Ceasar</p>
-			</div><!-- End Column -->
-		</div><!-- End row -->
+	<section class="section-padding">
+		<div class="container"><!-- Container -->
+			<div class="row row-justify-center"><!-- row -->
+				<div class="col col-lg-12"><!-- Column -->
+					<p style="font-size: 45px; text-align: center;">Experience is the teacher of all things</p>
+					<p style="font-size: 25px; text-align: center;">- Julius Ceasar</p>
+				</div><!-- End Column -->
+			</div><!-- End row -->
+		</div><!-- End Container -->
 	</section><!-- Quote Section -->
 
 	<!-- Newsletter -->
-	<section class="dark-grey-bac">
+	<section class="section-padding dark-blue-bac">
 
-		<div><!-- Container -->
+		<div class="container"><!-- Container -->
 
-			<div><!-- row -->
-				<h2>Sign Up For Our Newsletter Today For Latest Updates!</h2>
+			<div class="row row-justify-center"><!-- row -->
+				<h3 style="text-align: center;">Sign Up For Our Newsletter Today For Latest Updates!</h3>
 
 				<div><!-- Column -->
 
-					<div>
-						<p>Newsletter</p>
-						<p>Email</p>
+					<div class="contact-form">
+						<div>
+							<label for="Newsletter" class="input-label">Select Newsletter</label>
+							<select id="Newsletter" name="Newsletter">
+								<option value="Children and Teen Program">Children and Teen Program</option>
+								<option value="Coustomer List">Coustomer List</option>
+								<option value="Student Email List">Student Email List</option>
+								<option value="Viva Clayworks Newsletter">Viva Clayworks Newsletter</option>
+								<option value="Workshops Email List">Workshops Email List</option>
+							</select>
+						</div>
+						<div>
+							<label for="email" class="input-label">Email</label>
+							<input type="email" name="email" placeholder="Type your email..." class="input-field">
+						</div>
+							
 						<a href="">Sign Up</a>
 					</div>
 					
