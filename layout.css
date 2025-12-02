@@ -1,3 +1,48 @@
+/** Spacing */
+.section-padding {
+	padding: 84px 0px;
+}
+
+.container{
+	display: block;
+	width: 88%;
+	/*max-width: 1400px;*/
+	margin: 0 auto;
+}
+
+.container-full{
+	width: 100%;
+}
+
+/* ROWS */
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: stretch;
+	margin: 0 -20px;
+}
+
+.row-justify-end{
+	justify-content: flex-end;
+}
+
+.row-justify-center{
+	justify-content: center;
+}
+
+.row-justify-between{
+	justify-content: space-between;
+}
+
+.row-align-end{
+	align-items: flex-end;
+}
+
+.row-align-center{
+	align-items: center;
+}
+
 /* COLUMN */
 
 .col{
