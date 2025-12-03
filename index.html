@@ -20,12 +20,12 @@
 	<header style="background-color: #32475E;">
 
 		<div class="nav">
-			<a href="index.html"><img src="Images/logo_img.svg" style="width: 30vw;"></a>
+			<a href="index.html"><img src="Images/logo_img.svg" style="width: 22vw;"></a>
 
 			<nav>
 				<ul>
 					<li> <a href="index.html" class="navigation">Home</a> </li>
-					<li> <a href="Contact.html" class="navigation">Products & Services</a> </li>
+					<li class="product-dropdown"> <a href="Products&services.html" class="navigation">Products & Services</a> </li>
 					<li> <a href="about.html" class="navigation">About</a> </li>
 					<li> <a href="Contact.html" class="navigation">Contact</a> </li>
 				</ul>
@@ -55,7 +55,7 @@
 					<p>The Viva Clayworks team is a group of talented ‘cerama-siblings’ who have come together to create a phenomenal teaching studio. Our passion is clay and our joy is sharing our passion with you. We have 12 wheels and a ton of space to create in our Edmonton studio. If you want to sink your hands in the clay and learn pottery our studio is your creative home base.</p>
 				</div><!-- End column text -->
 				<div class="col col-lg-4 card-img-wrap"><!-- column image-->
-					<img src="Images/Viva_homepage_1.jpg">
+					<img src="Images/Viva_homepage_1.jpg" class="card-img">
 				</div><!-- End column image -->
 			</div><!-- End row -->
 		</div><!-- End Container -->
@@ -74,33 +74,33 @@
 				<!-- What we offer 1 -->
 				<div class="col col-lg-4"><!-- Column -->
 					<div class="card-img-wrap-2">
-						<img src="Images/Viva_homepage_offer_1.jpg">
+						<img src="Images/Viva_homepage_offer_1.jpg" class="card-img">
 					</div>
 					<div>
-						<h3>Pottery Classes</h3>
-						<a href="products.html">Learn More</a>
+						<h3 style="text-align:center;">Pottery Classes</h3>
+						<a href="products.html" class="button button-2">Learn More</a>
 					</div>
 				</div><!-- End Column -->
 
 				<!-- What we offer 2 -->
 				<div class="col col-lg-4"><!-- Column -->
 					<div class="card-img-wrap-2">
-						<img src="Images/Viva_homepage_offer_2.jpg">
+						<img src="Images/Viva_homepage_offer_2.jpg" class="card-img">
 					</div>
 					<div>
-						<h3>Firing</h3>
-						<a href="products.html">Learn More</a>
+						<h3 style="text-align:center;">Firing</h3>
+						<a href="products.html" class="button button-2">Learn More</a>
 					</div>
 				</div><!-- End Column -->
 
 				<!-- What we offer 3 -->
 				<div class="col col-lg-4"><!-- Column -->
 					<div class="card-img-wrap-2">
-						<img src="Images/Viva_homepage_offer_3.jpg">
+						<img src="Images/Viva_homepage_offer_3.jpg" class="card-img">
 					</div>
 					<div>
-						<h3>Shop</h3>
-						<a href="products.html">Learn More</a>
+						<h3 style="text-align:center;">Shop</h3>
+						<a href="products.html" class="button button-2">Learn More</a>
 					</div>
 				</div><!-- End Column -->
 
@@ -131,7 +131,7 @@
 
 				<div><!-- Column -->
 
-					<div class="contact-form">
+					<form class="contact-form">
 						<div>
 							<label for="Newsletter" class="input-label">Select Newsletter</label>
 							<select id="Newsletter" name="Newsletter">
@@ -147,8 +147,9 @@
 							<input type="email" name="email" placeholder="Type your email..." class="input-field">
 						</div>
 							
-						<a href="">Sign Up</a>
-					</div>
+					</form>
+
+					<a href="#sign up" class="button button-1">Sign Up</a>
 					
 				</div><!-- End Column -->
 
@@ -158,32 +159,41 @@
 
 	</section><!-- End Newsletter -->
 
-	<footer><!-- Footer -->
+	<footer class="section-padding" style="background-color: #32475E;"><!-- Footer -->
 
-		<div><!-- Container -->
+		<div class="container"><!-- Container -->
 
-			<div><!-- row -->
+			<div class="row"><!-- row -->
 
-				<div><!-- column 1-->
+				<div class="col col-lg-5"><!-- column 1-->
 
 					<!-- LOGO -->
 
 					<div>
-
-						<p>© 2025 / All Rights Reserved</p>
-						<p>Privacy Policy</p>
-						<p>Terms</p>
+						<a href="index.html"><img src="Images/logo_img.svg" style="width: 22vw;"></a>
+						<div class="footer-margin">
+							<p class="white-text text-small">© 2025 / All Rights Reserved   <a href="#" class="white-text">Privacy Policy</a>   <a href="#" class="white-text">Terms</a></p>
+						</div>
 						
 					</div>
 					
 				</div><!-- End Column 1-->
 
-				<div><!-- column 2-->
-					<h3>Contact Us</h3>
+				<div class="col col-lg-4"><!-- column 2-->
+					<h3 class="white-text">Contact Us</h3>
+					<p class="white-text"><img src="Images/call.png">780-939-5224</p>
+					<p class="white-text"><img src="Images/drafts.png">hello@risecoffee.com</p>
+					<p class="white-text"><img src="Images/distance.png">304 Main St<br> Wellington, ON  K0K 3L0</p>
 				</div><!-- End Column 2-->
 
-				<div><!-- column 3-->
-					<h3>Useful Links</h3>
+				<div class="col col-lg-3"><!-- column 3-->
+					<h3 class="white-text">Useful Links</h3>
+					<p><a href="" class="white-text" style="text-decoration: None;">Home</a></p>
+					<p><a href="" class="white-text" style="text-decoration: None;">About Us</a></p>
+					<p><a href="" class="white-text" style="text-decoration: None;">Contact Us</a></p>
+					<p><a href="" class="white-text" style="text-decoration: None;">Pottery Classes + Workshop</a></p>
+					<p><a href="" class="white-text" style="text-decoration: None;">Firing</a></p>
+					<p><a href="" class="white-text" style="text-decoration: None;">Shop</a></p>
 				</div><!-- End Column 3-->
 				
 			</div><!-- End row -->
