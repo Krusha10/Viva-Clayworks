@@ -185,7 +185,11 @@ nav ul {
 }
 
 
-/** Text Color */
+/** Text Elements */
 .white-text{
 	color: white;
+}
+
+.center-text{
+	text-align: center;
 }
