@@ -25,7 +25,7 @@ h2{
 	letter-spacing: -1px;
 	color: #000000;
 	margin-top: 0px;
-	margin-bottom: 16px;
+	margin-bottom: 50px;
 }
 
 h3 {
@@ -34,7 +34,7 @@ h3 {
 	font-weight: 500;
 	letter-spacing: -1px;
 	color: #000000;
-	margin: 0px;
+	margin-bottom: 50px;
 }
 
 p {
@@ -45,6 +45,9 @@ p {
 }
 
 /** Navigation */
+header{
+	padding: 16px 4%;
+}
 .nav{
 	display: flex;
 	flex-direction: row;
@@ -69,7 +72,28 @@ nav ul {
 	padding-left: 0px;
 }
 
-/** Text over image */
+.product-dropdown{
+	overflow: hidden;
+	float: left;
+}
+
+.dropdown-button{
+	border: none;
+	outline: none;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+
+.dropdown-links{
+	float: none;
+	padding: 12px 16px;
+	display: block;
+	text-align: left;
+}
+
+/** image */
 .image{
 	position: relative;
 	text-align: center;
@@ -80,12 +104,15 @@ nav ul {
 	top: 35%;
 }
 
+.card-img{
+	object-fit: cover;
+	width: 100%;
+}
+
 .card-img-wrap{
 	width: 100%;
-	aspect-ratio: 4 / 5;
 	overflow: hidden;
-	border-top-left-radius: 40% 40%;
-	border-bottom-right-radius: 40% 40%;
+	border-radius: 12vw 0vw 12vw 0vw;
 	position: relative;
 }
 
@@ -120,4 +147,45 @@ nav ul {
 	grid-template: 1fr / 1fr 1fr;
 	gap: 32px;
 	align-items: end;
+}
+
+/** Buttons */
+.button {
+	display: inline-block;
+	color: white;
+	padding: 10px 18px;
+	background-color: #000000;
+	text-decoration: none;
+	font-weight: medium;
+	transition: background 0.2s ease;
+	border: none;
+}
+
+.button:hover {
+	background-color: #434343;
+}
+
+.button-1{
+	border-radius: 12%;
+}
+
+.button-2 {
+	font-size: 15px;
+	border-radius: 12%;
+}
+
+
+/** Footer */
+.footer-margin {
+	margin-top: 140px;
+}
+
+.text-small {
+	font-size: 12px;
+}
+
+
+/** Text Color */
+.white-text{
+	color: white;
 }
