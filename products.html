@@ -20,22 +20,31 @@
 	<header style="background-color: #32475E;">
 
 		<div class="nav">
-			<a href="index.html"><img src="Images/logo_img.svg" style="width: 22vw;"></a>
+			<a href="index.html"><img src="Images/logo_img.svg" alt="logo image" style="width: 200px;"></a>
 
-			<nav>
-				<ul>
-					<li> <a href="index.html" class="navigation">Home</a> </li>
-					<li class="product-dropdown">
-						<a href="#" class="navigation">Products & Services ▾ </a>
-						<ul class="dropdown">
-							<li><a href="products.html">Pottery Classes + Workshops</a></li>
-							<li><a href="firing.html">Firing service</a></li>
-							<li><a href="#">Shop</a></li>
-						</ul>
-					<li> <a href="about.html" class="navigation">About</a> </li>
-					<li> <a href="#" class="navigation">Contact</a> </li>
-				</ul>
-			</nav>
+			<div class="hamburger">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+
+			<div class="menu">
+				<nav>
+					<ul>
+						<li> <a href="index.html" class="navigation">Home</a> </li>
+						<li class="product-dropdown">
+							<a href="#" class="navigation">Products & Services ▾ </a>
+							<ul class="dropdown">
+								<li><a href="products.html">Pottery Classes + Workshops</a></li>
+								<li><a href="firing.html">Firing service</a></li>
+								<li><a href="#">Shop</a></li>
+							</ul>
+						<li> <a href="about.html" class="navigation">About</a> </li>
+						<li> <a href="#" class="navigation">Contact</a> </li>
+					</ul>
+				</nav>
+			</div>
+
 		</div>
 
 	</header>
@@ -44,8 +53,8 @@
 	<section>
 		<div class="">
 			<div class="image">
-				<img src="Images/Viva_homepage_hero.jpg" style="width: 100%">
-				<h1 class="center">Viva Clayworks Pottery</h1>
+				<img src="Images/Viva_homepage_hero 1.jpg" alt="Hero image of pottery work made by hand" style="width: 100%">
+				<div class="text">Viva Clayworks Pottery</div>
 			</div>
 		</div>
 	</section><!-- End Hero Section -->
@@ -60,13 +69,13 @@
 			<div class="row row-justify-center classes-card">
 				<h3>Wheel Classes - Six Weeks</h3>
 				<p>Our classes are currently at capacity. Please sign up for our newsletter at the bottom of our webpage, we will send out notifications through email when we have spaces available. Spots are filled on a first-call, first-serve basis! We do not have a schedule available for start dates. Current students get first-dibs on their seat in the class, and we fill any spaces by reaching out though our newsletter.</p>
-				<div class="col col-lg-6">
+				<div class="col col-lg-6 col-sm-12">
 					<p style="font-size: 25px;">Price</p>
 					<p>$280 for the 6 weeks</p>
 					<p>+ $44.95 for clay</p>
 					<p>+ $26.95 for our tool kit.</p>
 				</div>
-				<div class="col col-lg-6 list">
+				<div class="col col-lg-6 col-sm-12 list">
 					<p style="font-size: 25px;">Days and Time:</p>
 					<ui>
 						<li>Mondays (6-9 pm)</li>
@@ -83,12 +92,12 @@
 			<div class="row row-justify-center classes-card" style="margin-top: 40px;">
 				<h3>Pottery Night Experience - October + November</h3>
 				<p>Each 90 minute class will be on the wheel. You will be given a demonstration and then go step by step along with the instructor, we try our very best to have you make a successful piece. There’s bit of clean up and then you choose the glaze colour you’d like us to finish your piece with. You have the fun, we’ll do the work and call you when it’s done! It takes about 3 weeks to finish all the firing and glazing, we will let you know when they are complete!</p>
-				<div class="col col-lg-6">
+				<div class="col col-lg-6 col-sm-12">
 					<p style="font-size: 25px;">Price</p>
 					<p>$75/class/person plus GST</p>
 					<p style="font-size: 17px;">*includes one finished piece, clay, tools</p>
 				</div>
-				<div class="col col-lg-6 list">
+				<div class="col col-lg-6 col-sm-12 list">
 					<p style="font-size: 25px;">Days and Time:</p>
 					<ui>
 						<li>Saturdays at 4 and 6 pm</li>
@@ -126,21 +135,21 @@
 
 			<div class="row row-justify-center"><!-- row 2-->
 
-				<!-- What we offer 2 -->
-				<div class="col col-lg-4"><!-- Column -->
+				<!-- Service 1 -->
+				<div class="col col-lg-4 col-sm-12"><!-- Column -->
 					<div class="card-img-wrap-2">
 						<img src="Images/Viva_homepage_offer_2.jpg" alt="Image of pottery firing" class="card-img">
 					</div>
 					<div>
 						<h3 style="text-align:center;">Firing</h3>
-						<div class="row row-justify-center">
+						<div class="row row-justify-center margin">
 							<a href="firing.html" class="button button-2">Learn More</a>
 						</div>
 					</div>
 				</div><!-- End Column -->
 
-				<!-- What we offer 3 -->
-				<div class="col col-lg-4"><!-- Column -->
+				<!-- Service 2 -->
+				<div class="col col-lg-4 col-sm-12"><!-- Column -->
 					<div class="card-img-wrap-2">
 						<img src="Images/Viva_homepage_offer_3.jpg" alt="Image of little otter book cover page" class="card-img">
 					</div>
@@ -166,26 +175,24 @@
 			<div class="row row-justify-center"><!-- row -->
 				<h3 style="text-align: center;">Sign Up For Our Newsletter Today For Latest Updates!</h3>
 
-				<div><!-- Column -->
-
-					<form class="contact-form">
-						<div>
-							<label for="Newsletter" class="input-label">Select Newsletter</label>
-							<select id="Newsletter" name="Newsletter">
-								<option value="--Please select--">--Please Select--</option>
-								<option value="Children and Teen Program">Children and Teen Program</option>
-								<option value="Coustomer List">Coustomer List</option>
-								<option value="Student Email List">Student Email List</option>
-								<option value="Viva Clayworks Newsletter">Viva Clayworks Newsletter</option>
-								<option value="Workshops Email List">Workshops Email List</option>
-							</select>
-						</div>
-						<div>
-							<label for="email" class="input-label">Email</label>
-							<input type="email" name="email" placeholder="Type your email..." class="input-field">
-						</div>
+				<form class="contact-form newsletter-form">
+					<div class="col col-lg-6 col-sm-11"><!-- Column -->
+						<label for="Newsletter" class="input-label">Select Newsletter</label>
+						<select id="Newsletter" name="Newsletter">
+							<option value="--Please select--">--Please Select--</option>
+							<option value="Children and Teen Program">Children and Teen Program</option>
+							<option value="Coustomer List">Coustomer List</option>
+							<option value="Student Email List">Student Email List</option>
+							<option value="Viva Clayworks Newsletter">Viva Clayworks Newsletter</option>
+							<option value="Workshops Email List">Workshops Email List</option>
+						</select>
+					</div>
+					<div class="col col-lg-11 col-sm-11">
+						<label for="email" class="input-label">Email</label>
+						<input type="email" name="email" placeholder="Type your email..." class="input-field">
+					</div>
 							
-					</form>
+				</form>
 					
 				</div><!-- End Column -->
 
@@ -199,42 +206,50 @@
 
 	</section><!-- End Newsletter -->
 
+	<!-- Footer -->
 	<footer class="section-padding" style="background-color: #32475E;"><!-- Footer -->
 
 		<div class="container"><!-- Container -->
 
 			<div class="row"><!-- row -->
 
-				<div class="col col-lg-5"><!-- column 1-->
+				<div class="col col-lg-5"><!-- column -->
 
-					<!-- LOGO -->
-
-					<div>
-						<a href="index.html"><img src="Images/logo_img.svg" style="width: 22vw;"></a>
-						<div class="footer-margin">
-							<p class="white-text text-small">© 2025 / All Rights Reserved   <a href="#" class="white-text">Privacy Policy</a>   <a href="#" class="white-text">Terms</a></p>
-						</div>
-						
-					</div>
+					<!-- Logo -->
+					<div class="footer-logo">
+						<a href="index.html"><img src="Images/logo_img.svg" alt="Viva Clayworks logo" style="width: 200px;"></a>
+					</div>				
+				</div><!-- End column -->
 					
-				</div><!-- End Column 1-->
 
-				<div class="col col-lg-4"><!-- column 2-->
+				<div class="col col-lg-4 col-sm-12"><!-- column -->
 					<h3 class="white-text">Contact Us</h3>
-					<p class="white-text"><img src="Images/call.png">780-939-5224</p>
-					<p class="white-text"><img src="Images/drafts.png">hello@risecoffee.com</p>
-					<p class="white-text"><img src="Images/distance.png">304 Main St<br> Wellington, ON  K0K 3L0</p>
-				</div><!-- End Column 2-->
+					<p class="white-text"><img src="Images/call.png" alt="call icon">  (780) 413 - 0118</p>
+					<p class="white-text"><img src="Images/drafts.png" alt="email icon">   hinfo@vivaclayworks.com</p>
+					<p class="white-text"><img src="Images/distance.png" alt="location icon">  10125 81 Avenue Edmonton,<br>AB T6E 1W9</p>
+				</div><!-- End Column -->
 
-				<div class="col col-lg-3"><!-- column 3-->
+				<div class="col col-lg-3 col-sm-12"><!-- column -->
 					<h3 class="white-text">Useful Links</h3>
-					<p><a href="index.html" class="white-text" style="text-decoration: None;">Home</a></p>
-					<p><a href="about.html" class="white-text" style="text-decoration: None;">About Us</a></p>
-					<p><a href="" class="white-text" style="text-decoration: None;">Contact Us</a></p>
-					<p><a href="products.html" class="white-text" style="text-decoration: None;">Pottery Classes + Workshop</a></p>
-					<p><a href="firing.html" class="white-text" style="text-decoration: None;">Firing</a></p>
-					<p><a href="" class="white-text" style="text-decoration: None;">Shop</a></p>
-				</div><!-- End Column 3-->
+					<ul class="text-white useful-link-style">
+						<li style="margin-bottom: 8px;"><a href="index.html" class="link-no-link">Home</a></li>
+						<li style="margin-bottom: 8px;"><a href="about.html" class="link-no-link">About Us</a></li>
+						<li style="margin-bottom: 8px;"><a href="#" class="link-no-link">Contact Us</a><</li>
+						<li style="margin-bottom: 8px;"><a href="products.html" class="link-no-link">Pottery Classes + Workshop</a></li>
+						<li style="margin-bottom: 8px;"><a href="firing.html" class="link-no-link">Firing</a></li>
+						<li><a href="" class="link-no-link">Shop</a></li>
+	  				</ul>
+				</div><!-- End Column -->
+
+
+				<div class="col col-lg-6 col-sm-12"><!-- column -->
+					<div class="footer-margin">
+						<img src="Images/instagram_icon.svg" alt="Instagram icon">
+						<img src="Images/facebook_icon.svg" alt="Facebook icon">
+						<p class="white-text text-small">© 2025 / All Rights Reserved   <a href="#" class="white-text">Privacy Policy</a>   <a href="#" class="white-text">Terms</a></p>
+					</div>
+							
+				</div><!-- End -->
 				
 			</div><!-- End row -->
 			
