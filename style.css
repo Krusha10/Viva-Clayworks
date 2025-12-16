@@ -29,7 +29,7 @@ h2{
 }
 
 h3 {
-	font-size: 35px;
+	font-size: 32px;
 	line-height: 120%;
 	font-weight: 500;
 	letter-spacing: -1px;
@@ -38,7 +38,7 @@ h3 {
 }
 
 p {
-	font-size: 18px;
+	font-size: 17px;
 	line-height: 140%;
 	font-weight: 400;
 	color: #000000;
@@ -71,6 +71,7 @@ nav ul {
 	gap: 16px;
 	padding-left: 0px;
 }
+
 
 .product-dropdown{
 	position: relative;
@@ -105,12 +106,22 @@ nav ul {
 /** image */
 .image{
 	position: relative;
-	text-align: center;
+	width: 100%;
 }
 
-.center{
-	position: absolute;
-	top: 35%;
+.image img{
+	width: 100%;
+	display: block;
+}
+
+.text{
+ 	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	color: white;
+  	font-size: 78px;
+  	text-align: center;
 }
 
 .card-img{
@@ -121,8 +132,21 @@ nav ul {
 .card-img-wrap{
 	width: 100%;
 	overflow: hidden;
-	border-radius: 12vw 0vw 12vw 0vw;
+	border-radius: 8vw 0vw;
 	position: relative;
+}
+
+.card-img-wrap-2{
+	width: 100%;
+	overflow: hidden;
+	border-radius: 6vw;
+	position: relative;
+}
+
+.classes-card{
+	border-radius: 8vw;
+	background-color: #C2DDD0;
+	padding: 5vw;
 }
 
 .card-container{
@@ -214,6 +238,7 @@ nav ul {
 	text-decoration: none;
 	font-weight: medium;
 	transition: background 0.2s ease;
+	border-radius: 10px;
 	border: none;
 }
 
@@ -222,18 +247,17 @@ nav ul {
 }
 
 .button-1{
-	border-radius: 12%;
+	margin: 2vw auto;
 }
 
 .button-2 {
 	font-size: 15px;
-	border-radius: 12%;
 }
 
 
 /** Footer */
 .footer-margin {
-	margin-top: 140px;
+	margin-top: 160px;
 }
 
 .text-small {
@@ -248,4 +272,77 @@ nav ul {
 
 .center-text{
 	text-align: center;
+}
+
+.list{
+	color: black;
+}
+
+.useful-link-style{
+	list-style: none;
+	padding-left: 0px;
+}
+
+.link-no-link{
+	text-decoration: none;
+	color: white;
+}
+
+
+/** Meadia Screens */
+
+/** Smartphone */
+@media screen and (max-width: 480px){
+	/* Main Styles */
+	h1{
+		font-size: 50px;
+	}
+	h2{
+		font-size: 40px;
+	}
+	h3{
+		font-size: 25px;
+	}
+
+	p {
+		font-size: 17px;
+	}
+
+	/** Other Elements */
+	.menu{
+		display: none;
+	}
+
+	.text{
+ 		position: absolute;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+  		color: white;
+  		font-size: 50px;
+  		text-align: center;
+	}
+
+	.hamburger{
+		display: flex;
+	}
+
+	.newsletter-form {
+		display: grid;
+		grid-template: 1fr / 1fr;
+		gap: 32px;
+		align-items: start;
+	}
+
+	.margin{
+		margin-bottom: 50px;
+	}
+
+	.footer-logo{
+		display: none;
+	}
+
+	.footer-margin {
+		margin-top: 0px;
+	}
 }
