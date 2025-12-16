@@ -20,22 +20,31 @@
 	<header style="background-color: #32475E;">
 
 		<div class="nav">
-			<a href="index.html"><img src="Images/logo_img.svg" style="width: 22vw;"></a>
+			<a href="index.html"><img src="Images/logo_img.svg" alt="logo image" style="width: 200px;"></a>
 
-			<nav>
-				<ul>
-					<li> <a href="index.html" class="navigation">Home</a> </li>
-					<li class="product-dropdown">
-						<a href="#" class="navigation">Products & Services ▾ </a>
-						<ul class="dropdown">
-							<li><a href="products.html">Pottery Classes + Workshops</a></li>
-							<li><a href="firing.html">Firing service</a></li>
-							<li><a href="#">Shop</a></li>
-						</ul>
-					<li> <a href="about.html" class="navigation">About</a> </li>
-					<li> <a href="#" class="navigation">Contact</a> </li>
-				</ul>
-			</nav>
+			<div class="hamburger">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+
+			<div class="menu">
+				<nav>
+					<ul>
+						<li> <a href="index.html" class="navigation">Home</a> </li>
+						<li class="product-dropdown">
+							<a href="#" class="navigation">Products & Services ▾ </a>
+							<ul class="dropdown">
+								<li><a href="products.html">Pottery Classes + Workshops</a></li>
+								<li><a href="firing.html">Firing service</a></li>
+								<li><a href="#">Shop</a></li>
+							</ul>
+						<li> <a href="about.html" class="navigation">About</a> </li>
+						<li> <a href="#" class="navigation">Contact</a> </li>
+					</ul>
+				</nav>
+			</div>
+
 		</div>
 
 	</header>
@@ -45,10 +54,8 @@
 	<section>
 		<div class="">
 			<div class="image">
-				<img src="Images/Viva_firing_hero.jpg" style="width: 100%">
-				<div class="row row-justify-center">
-					<h1 class="center">Firing Service</h1>
-				</div>
+				<img src="Images/Viva_firing_hero.jpg" alt="Hero image firing pottery work" style="width: 100%">
+				<div class="text">Firing Service</div>
 			</div>
 		</div>
 	</section><!-- End Hero Section -->
@@ -60,19 +67,19 @@
 				<h2>Types of Firing</h2>
 			</div>
 			<div class="row row-align-center"><!-- row -->
-				<div class="col col-lg-8"><!-- column text-->
+				<div class="col col-lg-8 col-sm-12"><!-- column text-->
 					<ul>
-						<li>Bisque (cone 04, electric)</li>
-						<li>Glaze (cone 6, electric)</li>
-						<li>Lustre (cone 018, electric) specialty</li>
-						<li>Wood firing (cone 10, wood) specialty, happen mostly in Fall</li>
-						<li>Salt + Soda (cone 10, gas) specialty, happen mostly in Fall</li>
-						<li>Raku (propane) specialty, we host workshops in the Summer</li>
+						<li style="color: black;">Bisque (cone 04, electric)</li>
+						<li style="color: black;">Glaze (cone 6, electric)</li>
+						<li style="color: black;">Lustre (cone 018, electric) specialty</li>
+						<li style="color: black;">Wood firing (cone 10, wood) specialty, happen mostly in Fall</li>
+						<li style="color: black;">Salt + Soda (cone 10, gas) specialty, happen mostly in Fall</li>
+						<li style="color: black;">Raku (propane) specialty, we host workshops in the Summer</li>
 					</ul>
 				</div><!-- End column text -->
-				<div class="col col-lg-4"><!-- column image-->
+				<div class="col col-lg-4 col-sm-12"><!-- column image-->
 					<div class="card-img-wrap">
-						<img src="Images/Viva_firing_1.jpg" class="card-img">
+						<img src="Images/Viva_firing_1.jpg" alt="Pots in fire" class="card-img">
 					</div>
 				</div><!-- End column image -->
 			</div><!-- End row -->
@@ -82,8 +89,12 @@
 	<!-- Our Mission -->
 	<section class="section-padding dark-blue-bac">
 		<div class="container"><!-- Container -->
+
 			<div class="row row-justify-center"><!-- row -->
-				<h2>Custom Firing Information</h2>
+				<h2 class="center-text">Custom Firing Information</h2>
+			</div>
+
+			<div class="row row-align-center"><!-- row -->
 				<div class="col col-lg-12"><!-- Column -->
 					<p class="center-text">Already well versed in the techniques and have a wheel at home but need access to a kiln? Bring your kiln ready pieces to us. Firing costs are based on spaced used in the kiln when firing cone 04, 06 and 6. We will measure your pieces and give you an estimate. If you need a different firing service we will charge by the kiln load. If you are interested call us or email for more information.</p>
 					<p class="center-text">Please ensure that you know exactly what kind of clay you are bringing to us. Not sure? Bring a photo of the packaging with you.</p>
@@ -104,29 +115,31 @@
 
 			<div class="row row-justify-center"><!-- row 2-->
 
-				<!-- What we offer 1 -->
-				<div class="col col-lg-4"><!-- Column -->
+				<!-- Service 1 -->
+				<div class="col col-lg-4 col-sm-12"><!-- Column -->
 					<div class="card-img-wrap-2">
-						<img src="Images/Viva_homepage_offer_1.jpg" class="card-img">
+						<img src="Images/Viva_homepage_offer_1.jpg" alt="Image of pottery work" class="card-img">
 					</div>
 					<div>
 						<h3 style="text-align:center;">Pottery Classes</h3>
-						<a href="products.html" class="button button-2">Learn More</a>
+						<div class="row row-justify-center margin">
+							<a href="products.html" class="button button-2">Learn More</a>
+						</div>
 					</div>
 				</div><!-- End Column -->
 
-				<!-- What we offer 2 -->
-				<div class="col col-lg-4"><!-- Column -->
+				<!-- Service 2 -->
+				<div class="col col-lg-4 col-sm-12"><!-- Column -->
 					<div class="card-img-wrap-2">
-						<img src="Images/Viva_homepage_offer_3.jpg" class="card-img">
+						<img src="Images/Viva_homepage_offer_3.jpg" alt="Image of little otter book cover page" class="card-img">
 					</div>
 					<div>
 						<h3 style="text-align:center;">Shop</h3>
-						<a href="products.html" class="button button-2">Learn More</a>
+						<div class="row row-justify-center">
+							<a href="#" class="button button-2">Learn More</a>
+						</div>
 					</div>
 				</div><!-- End Column -->
-
-			</div><!-- End row 2-->
 
 		</div><!-- End Container -->
 	</section><!-- End What we offer section -->
@@ -136,42 +149,50 @@
 
 
 
+	<!-- Footer -->
 	<footer class="section-padding" style="background-color: #32475E;"><!-- Footer -->
 
 		<div class="container"><!-- Container -->
 
 			<div class="row"><!-- row -->
 
-				<div class="col col-lg-5"><!-- column 1-->
+				<div class="col col-lg-5"><!-- column -->
 
-					<!-- LOGO -->
-
-					<div>
-						<a href="index.html"><img src="Images/logo_img.svg" style="width: 22vw;"></a>
-						<div class="footer-margin">
-							<p class="white-text text-small">© 2025 / All Rights Reserved   <a href="#" class="white-text">Privacy Policy</a>   <a href="#" class="white-text">Terms</a></p>
-						</div>
-						
-					</div>
+					<!-- Logo -->
+					<div class="footer-logo">
+						<a href="index.html"><img src="Images/logo_img.svg" alt="Viva Clayworks logo" style="width: 200px;"></a>
+					</div>				
+				</div><!-- End column -->
 					
-				</div><!-- End Column 1-->
 
-				<div class="col col-lg-4"><!-- column 2-->
+				<div class="col col-lg-4 col-sm-12"><!-- column -->
 					<h3 class="white-text">Contact Us</h3>
-					<p class="white-text"><img src="Images/call.png">780-939-5224</p>
-					<p class="white-text"><img src="Images/drafts.png">hello@risecoffee.com</p>
-					<p class="white-text"><img src="Images/distance.png">304 Main St<br> Wellington, ON  K0K 3L0</p>
-				</div><!-- End Column 2-->
+					<p class="white-text"><img src="Images/call.png" alt="call icon">  (780) 413 - 0118</p>
+					<p class="white-text"><img src="Images/drafts.png" alt="email icon">   hinfo@vivaclayworks.com</p>
+					<p class="white-text"><img src="Images/distance.png" alt="location icon">  10125 81 Avenue Edmonton,<br>AB T6E 1W9</p>
+				</div><!-- End Column -->
 
-				<div class="col col-lg-3"><!-- column 3-->
+				<div class="col col-lg-3 col-sm-12"><!-- column -->
 					<h3 class="white-text">Useful Links</h3>
-					<p><a href="index.html" class="white-text" style="text-decoration: None;">Home</a></p>
-					<p><a href="about.html" class="white-text" style="text-decoration: None;">About Us</a></p>
-					<p><a href="" class="white-text" style="text-decoration: None;">Contact Us</a></p>
-					<p><a href="products.html" class="white-text" style="text-decoration: None;">Pottery Classes + Workshop</a></p>
-					<p><a href="firing.html" class="white-text" style="text-decoration: None;">Firing</a></p>
-					<p><a href="" class="white-text" style="text-decoration: None;">Shop</a></p>
-				</div><!-- End Column 3-->
+					<ul class="text-white useful-link-style">
+						<li style="margin-bottom: 8px;"><a href="index.html" class="link-no-link">Home</a></li>
+						<li style="margin-bottom: 8px;"><a href="about.html" class="link-no-link">About Us</a></li>
+						<li style="margin-bottom: 8px;"><a href="#" class="link-no-link">Contact Us</a><</li>
+						<li style="margin-bottom: 8px;"><a href="products.html" class="link-no-link">Pottery Classes + Workshop</a></li>
+						<li style="margin-bottom: 8px;"><a href="firing.html" class="link-no-link">Firing</a></li>
+						<li><a href="" class="link-no-link">Shop</a></li>
+	  				</ul>
+				</div><!-- End Column -->
+
+
+				<div class="col col-lg-6 col-sm-12"><!-- column -->
+					<div class="footer-margin">
+						<img src="Images/instagram_icon.svg" alt="Instagram icon">
+						<img src="Images/facebook_icon.svg" alt="Facebook icon">
+						<p class="white-text text-small">© 2025 / All Rights Reserved   <a href="#" class="white-text">Privacy Policy</a>   <a href="#" class="white-text">Terms</a></p>
+					</div>
+							
+				</div><!-- End -->
 				
 			</div><!-- End row -->
 			
