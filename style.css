@@ -72,6 +72,20 @@ nav ul {
 	padding-left: 0px;
 }
 
+.hamburger {
+	width: 30px;
+	height: 20px;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.line {
+	width: 100%;
+	height: 2px;
+	background-color: #FFF4E2;
+}
+
 
 .product-dropdown{
 	position: relative;
@@ -122,6 +136,10 @@ nav ul {
   	color: white;
   	font-size: 78px;
   	text-align: center;
+}
+
+.value-card-display-sm{
+	display: none;
 }
 
 .card-img{
@@ -247,7 +265,7 @@ nav ul {
 }
 
 .button-1{
-	margin: 2vw auto;
+	margin: 30px auto;
 }
 
 .button-2 {
@@ -257,7 +275,7 @@ nav ul {
 
 /** Footer */
 .footer-margin {
-	margin-top: 160px;
+	margin-top: 30px;
 }
 
 .text-small {
@@ -295,13 +313,13 @@ nav ul {
 @media screen and (max-width: 480px){
 	/* Main Styles */
 	h1{
-		font-size: 50px;
+		font-size: 56px;
 	}
 	h2{
-		font-size: 40px;
+		font-size: 44px;
 	}
 	h3{
-		font-size: 25px;
+		font-size: 28px;
 	}
 
 	p {
@@ -327,11 +345,35 @@ nav ul {
 		display: flex;
 	}
 
+	.card-flip-sm{
+		background-color: transparent;
+		width: 80%;
+		height: 80%;
+		perspective: 1000px;
+		position: relative;
+	}
+
 	.newsletter-form {
 		display: grid;
 		grid-template: 1fr / 1fr;
 		gap: 32px;
 		align-items: start;
+	}
+
+	.card-flip{
+		background-color: transparent;
+		width: 300px;
+		height: 300px;
+		perspective: 1000px;
+		position: relative;
+	}
+
+	.value-card-display{
+		display: none;
+	}
+
+	.value-card-display-sm{
+		display: block;
 	}
 
 	.margin{
@@ -343,6 +385,6 @@ nav ul {
 	}
 
 	.footer-margin {
-		margin-top: 0px;
+		margin-top: 50px;
 	}
 }
