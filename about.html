@@ -20,22 +20,31 @@
 	<header style="background-color: #32475E;">
 
 		<div class="nav">
-			<a href="index.html"><img src="Images/logo_img.svg" style="width: 22vw;"></a>
+			<a href="index.html"><img src="Images/logo_img.svg" alt="logo image" style="width: 200px;"></a>
 
-			<nav>
-				<ul>
-					<li> <a href="index.html" class="navigation">Home</a> </li>
-					<li class="product-dropdown">
-						<a href="#" class="navigation">Products & Services ▾ </a>
-						<ul class="dropdown">
-							<li><a href="products.html">Pottery Classes + Workshops</a></li>
-							<li><a href="firing.html">Firing service</a></li>
-							<li><a href="#">Shop</a></li>
-						</ul>
-					<li> <a href="about.html" class="navigation">About</a> </li>
-					<li> <a href="#" class="navigation">Contact</a> </li>
-				</ul>
-			</nav>
+			<div class="hamburger">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+
+			<div class="menu">
+				<nav>
+					<ul>
+						<li> <a href="index.html" class="navigation">Home</a> </li>
+						<li class="product-dropdown">
+							<a href="#" class="navigation">Products & Services ▾ </a>
+							<ul class="dropdown">
+								<li><a href="products.html">Pottery Classes + Workshops</a></li>
+								<li><a href="firing.html">Firing service</a></li>
+								<li><a href="#">Shop</a></li>
+							</ul>
+						<li> <a href="about.html" class="navigation">About</a> </li>
+						<li> <a href="#" class="navigation">Contact</a> </li>
+					</ul>
+				</nav>
+			</div>
+
 		</div>
 
 	</header>
@@ -45,10 +54,8 @@
 	<section>
 		<div class="">
 			<div class="image">
-				<img src="Images/Viva_about_hero.jpg" style="width: 100%">
-				<div class="row row-justify-center">
-					<h1 class="center">About Us</h1>
-				</div>
+				<img src="Images/Viva_about_hero.jpg" alt="Hero image of pottery work" style="width: 100%">
+				<div class="text">About Us</div>
 			</div>
 		</div>
 	</section><!-- End Hero Section -->
@@ -61,11 +68,13 @@
 				<h2>Our History</h2>
 			</div>
 			<div class="row row-align-center"><!-- row -->
-				<div class="col col-lg-8"><!-- column text-->
+				<div class="col col-lg-8 col-sm-12"><!-- column text-->
 					<p>Our Edmonton studio started in 1995 as a small branch of a larger business, Clayworks Studio. Our studio space off Whyte Avenue is a haven for clay creatives who are interested in hand building and wheel works. We also have a retail store full of one-of-a-kind works of art lovingly made by our current and former students.</p>
 				</div><!-- End column text -->
-				<div class="col col-lg-4 card-img-wrap"><!-- column image-->
-					<img src="Images/Viva_about_history.jpg" class="card-img">
+				<div class="col col-lg-4 col-sm-12"><!-- column image-->
+					<div class="card-img-wrap">
+						<img src="Images/Viva_about_history.jpg" alt="Place with pottery work" class="card-img">
+					</div>
 				</div><!-- End column image -->
 			</div><!-- End row -->
 		</div><!-- End Container -->
@@ -91,57 +100,125 @@
 				<h2>Our Values</h2>
 			</div><!-- End row 1-->
 
-			<div class="row row-justify-center"><!-- row 2-->
+			<div class="value-card-display">
+				<div class="row row-justify-center"><!-- row 2-->
 
-				<!-- What we offer 1 -->
-				<div class="col col-lg-4"><!-- Column -->
-					<div class="card-flip">
+					<!-- What we offer 1 -->
+					<div class="col col-lg-4 col-sm-12"><!-- Column -->
+						<div class="card-flip card-flip-sm">
+							<div class="card-flip-2">
+								<div class="front-card-flip">
+									<img src="Images/Viva_about_value1.jpg" alt="Teaching image" class="card-img">
+								</div>
+								<div class="flip-card-back">
+									<p style="font-size: 2vw;">The studio's mission includes passing on the intricacies of working with clay to new makers through various classes and one-night events.</p>
+								</div>
+							</div>
+							<h3 style="text-align: center;" class="margin">Teaching</h3>
+						</div>
+					</div><!-- End Column -->
+
+
+					<!-- What we offer 2 -->
+					<div class="col col-lg-4 col-sm-12"><!-- Column -->
+						<div class="card-flip">
+							<div class="card-flip-2">
+								<div class="front-card-flip">
+									<img src="Images/Viva_about_value2.jpg" alt="People making pottery work" class="card-img">
+								</div>
+								<div class="flip-card-back">
+									<p style="font-size: 2vw;">Viva Clayworks fosters a community for clay creatives and serves as a "home for art you can hold," emphasizing connection through the craft.</p>
+								</div>
+							</div>
+							<h3 style="text-align: center;">Community</h3>
+						</div>
+					</div><!-- End Column -->
+
+
+					<!-- What we offer 3 -->
+					<div class="col col-lg-4 col-sm-12"><!-- Column -->
+						<div class="card-flip">
+							<div class="card-flip-2">
+								<div class="front-card-flip">
+									<img src="Images/Viva_about_value3.jpg" alt="pottery making" class="card-img">
+								</div>
+								<div class="flip-card-back">
+									<p style="font-size: 1.8vw;">A core part of their mission is a passion for the art of pottery itself, which is reflected in both their teaching and their retail store, which features unique works by their students and artists.</p>
+								</div>
+							</div>
+							<h3 style="text-align: center;">Artistry</h3>
+						</div>
+					</div><!-- End Column -->
+
+
+				</div><!-- End row 2-->
+			</div>
+
+			<!-- Smartphone display -->
+			<div class="value-card-display-sm">
+				<div class="row row-justify-center"><!-- row 2-->
+
+					<!-- What we offer 1 -->
+					<div class="card-flip"><!-- card -->
 						<div class="card-flip-2">
 							<div class="front-card-flip">
-								<img src="Images/Viva_about_value1.jpg" class="card-img">
+								<img src="Images/Viva_about_value1.jpg" alt="Teaching image" class="card-img">
 							</div>
 							<div class="flip-card-back">
-								<p style="font-size: 2vw;">The studio's mission includes passing on the intricacies of working with clay to new makers through various classes and one-night events.</p>
+								<p>The studio's mission includes passing on the intricacies of working with clay to new makers through various classes and one-night events.</p>
 							</div>
 						</div>
-						<h3 style="text-align: center;">Teaching</h3>
-					</div>
-				</div><!-- End Column -->
+					</div><!-- End card -->
+
+				</div><!-- End row -->
+
+				<div class="row row-justify-center"><!-- row -->
+					<h3 style="text-align: center;">Teaching</h3>
+				</div><!-- End row -->
 
 
-				<!-- What we offer 2 -->
-				<div class="col col-lg-4"><!-- Column -->
-					<div class="card-flip">
+				<div class="row row-justify-center"><!-- row -->
+
+					<!-- What we offer 2 -->
+					<div class="card-flip"><!-- card -->
 						<div class="card-flip-2">
 							<div class="front-card-flip">
-								<img src="Images/Viva_about_value2.jpg" class="card-img">
+								<img src="Images/Viva_about_value2.jpg" alt="People making pottery work" class="card-img">
 							</div>
 							<div class="flip-card-back">
-								<p style="font-size: 2vw;">Viva Clayworks fosters a community for clay creatives and serves as a "home for art you can hold," emphasizing connection through the craft.</p>
+								<p>Viva Clayworks fosters a community for clay creatives and serves as a "home for art you can hold," emphasizing connection through the craft.</p>
 							</div>
 						</div>
-						<h3 style="text-align: center;">Community</h3>
-					</div>
-				</div><!-- End Column -->
+					</div><!-- End card -->
+
+				</div><!-- End row -->
+
+				<div class="row row-justify-center">
+					<h3 style="text-align: center;">Community</h3>
+				</div>
 
 
-				<!-- What we offer 3 -->
-				<div class="col col-lg-4"><!-- Column -->
-					<div class="card-flip">
+				<div class="row row-justify-center"><!-- row -->
+
+					<!-- What we offer 2 -->
+					<div class="card-flip"><!-- card -->
 						<div class="card-flip-2">
 							<div class="front-card-flip">
-								<img src="Images/Viva_about_value3.jpg" class="card-img">
+								<img src="Images/Viva_about_value3.jpg" alt="pottery making" class="card-img">
 							</div>
 							<div class="flip-card-back">
-								<p style="font-size: 1.8vw;">A core part of their mission is a passion for the art of pottery itself, which is reflected in both their teaching and their retail store, which features unique works by their students and artists.</p>
+								<p>A core part of their mission is a passion for the art of pottery itself, which is reflected in both their teaching and their retail store, which features unique works by their students and artists.</p>
 							</div>
 						</div>
-						<h3 style="text-align: center;">Artistry</h3>
-					</div>
-				</div><!-- End Column -->
+					</div><!-- End Card -->
 
+				</div><!-- End row -->
 
-			</div><!-- End row 2-->
+				<div class="row row-justify-center"><!-- row -->
+					<h3 style="text-align: center;">Artistry</h3>
+				</div><!-- End row -->
+
+			</div><!-- End row 2 -->
 
 		</div><!-- End Container -->
 	</section><!-- End What we offer section -->
@@ -150,7 +227,9 @@
 	<section class="section-padding dark-blue-bac">
 		<div class="container"><!-- Container -->
 			<div class="row row-justify-center"><!-- row -->
-				<h2>What Our Customers Are Saying...</h2>
+				<h2 class="center-text">What Our Customers Are Saying...</h2>
+			</div><!-- End row -->
+			<div class="row row-justify-center"><!-- row -->
 				<div class="col col-lg-12"><!-- Column -->
 					<p class="center-text">“This place is amazing. Our work did the mug making workshop at Viva Clayworks and it was such a blast. Their team created such a fun and creative atmosphere and made the activity so approachable. Highly recommended!”</p>
 					<p class="center-text">~ Matt R.</p>
@@ -160,46 +239,50 @@
 	</section><!-- End Our Mission Section -->
 
 
-
-
-
-
+	<!-- Footer -->
 	<footer class="section-padding" style="background-color: #32475E;"><!-- Footer -->
 
 		<div class="container"><!-- Container -->
 
 			<div class="row"><!-- row -->
 
-				<div class="col col-lg-5"><!-- column 1-->
+				<div class="col col-lg-5"><!-- column -->
 
-					<!-- LOGO -->
-
-					<div>
-						<a href="index.html"><img src="Images/logo_img.svg" style="width: 22vw;"></a>
-						<div class="footer-margin">
-							<p class="white-text text-small">© 2025 / All Rights Reserved   <a href="#" class="white-text">Privacy Policy</a>   <a href="#" class="white-text">Terms</a></p>
-						</div>
-						
-					</div>
+					<!-- Logo -->
+					<div class="footer-logo">
+						<a href="index.html"><img src="Images/logo_img.svg" alt="Viva Clayworks logo" style="width: 200px;"></a>
+					</div>				
+				</div><!-- End column -->
 					
-				</div><!-- End Column 1-->
 
-				<div class="col col-lg-4"><!-- column 2-->
+				<div class="col col-lg-4 col-sm-12"><!-- column -->
 					<h3 class="white-text">Contact Us</h3>
-					<p class="white-text"><img src="Images/call.png">780-939-5224</p>
-					<p class="white-text"><img src="Images/drafts.png">hello@risecoffee.com</p>
-					<p class="white-text"><img src="Images/distance.png">304 Main St<br> Wellington, ON  K0K 3L0</p>
-				</div><!-- End Column 2-->
+					<p class="white-text"><img src="Images/call.png" alt="call icon">  (780) 413 - 0118</p>
+					<p class="white-text"><img src="Images/drafts.png" alt="email icon">   hinfo@vivaclayworks.com</p>
+					<p class="white-text"><img src="Images/distance.png" alt="location icon">  10125 81 Avenue Edmonton,<br>AB T6E 1W9</p>
+				</div><!-- End Column -->
 
-				<div class="col col-lg-3"><!-- column 3-->
+				<div class="col col-lg-3 col-sm-12"><!-- column -->
 					<h3 class="white-text">Useful Links</h3>
-					<p><a href="index.html" class="white-text" style="text-decoration: None;">Home</a></p>
-					<p><a href="about.html" class="white-text" style="text-decoration: None;">About Us</a></p>
-					<p><a href="" class="white-text" style="text-decoration: None;">Contact Us</a></p>
-					<p><a href="products.html" class="white-text" style="text-decoration: None;">Pottery Classes + Workshop</a></p>
-					<p><a href="firing.html" class="white-text" style="text-decoration: None;">Firing</a></p>
-					<p><a href="" class="white-text" style="text-decoration: None;">Shop</a></p>
-				</div><!-- End Column 3-->
+					<ul class="text-white useful-link-style">
+						<li style="margin-bottom: 8px;"><a href="index.html" class="link-no-link">Home</a></li>
+						<li style="margin-bottom: 8px;"><a href="about.html" class="link-no-link">About Us</a></li>
+						<li style="margin-bottom: 8px;"><a href="#" class="link-no-link">Contact Us</a><</li>
+						<li style="margin-bottom: 8px;"><a href="products.html" class="link-no-link">Pottery Classes + Workshop</a></li>
+						<li style="margin-bottom: 8px;"><a href="firing.html" class="link-no-link">Firing</a></li>
+						<li><a href="" class="link-no-link">Shop</a></li>
+	  				</ul>
+				</div><!-- End Column -->
+
+
+				<div class="col col-lg-6 col-sm-12"><!-- column -->
+					<div class="footer-margin">
+						<img src="Images/instagram_icon.svg" alt="Instagram icon">
+						<img src="Images/facebook_icon.svg" alt="Facebook icon">
+						<p class="white-text text-small">© 2025 / All Rights Reserved   <a href="#" class="white-text">Privacy Policy</a>   <a href="#" class="white-text">Terms</a></p>
+					</div>
+							
+				</div><!-- End -->
 				
 			</div><!-- End row -->
 			
