@@ -20,7 +20,7 @@
 	<header style="background-color: #32475E;">
 
 		<div class="nav">
-			<a href="index.html"><img src="Images/logo_img.svg" style="width: 22vw;"></a>
+			<a href="index.html"><img src="Images/logo_img.svg" alt="logo image" style="width: 22vw;"></a>
 
 			<nav>
 				<ul>
@@ -44,8 +44,8 @@
 	<section>
 		<div class="">
 			<div class="image">
-				<img src="Images/Viva_homepage_hero.jpg" style="width: 100%">
-				<h1 class="center">Viva Clayworks Pottery</h1>
+				<img src="Images/Viva_homepage_hero.jpg" alt="Hero image of pottery work" style="width: 100%;">
+				<div class="text">Viva Clayworks Pottery</div>
 			</div>
 		</div>
 	</section><!-- End Hero Section -->
@@ -57,11 +57,13 @@
 				<h2>Who We Are</h2>
 			</div>
 			<div class="row row-align-center"><!-- row -->
-				<div class="col col-lg-8"><!-- column text-->
+				<div class="col col-lg-8 col-sm-12"><!-- column text-->
 					<p>The Viva Clayworks team is a group of talented ‘cerama-siblings’ who have come together to create a phenomenal teaching studio. Our passion is clay and our joy is sharing our passion with you. We have 12 wheels and a ton of space to create in our Edmonton studio. If you want to sink your hands in the clay and learn pottery our studio is your creative home base.</p>
 				</div><!-- End column text -->
-				<div class="col col-lg-4 card-img-wrap"><!-- column image-->
-					<img src="Images/Viva_homepage_1.jpg" class="card-img">
+				<div class="col col-lg-4 col-sm-12"><!-- column image-->
+					<div class="card-img-wrap">
+						<img src="Images/Viva_homepage_1.jpg" alt="Image of kettle" class="card-img">
+					</div>
 				</div><!-- End column image -->
 			</div><!-- End row -->
 		</div><!-- End Container -->
@@ -75,38 +77,44 @@
 				<h2>What We Offer</h2>
 			</div><!-- End row 1-->
 
-			<div class="row row-align-center"><!-- row 2-->
+			<div class="row row-justify-center"><!-- row 2-->
 
 				<!-- What we offer 1 -->
-				<div class="col col-lg-4"><!-- Column -->
+				<div class="col col-lg-4 col-sm-12"><!-- Column -->
 					<div class="card-img-wrap-2">
-						<img src="Images/Viva_homepage_offer_1.jpg" class="card-img">
+						<img src="Images/Viva_homepage_offer_1.jpg" alt="Image of pottery work" class="card-img">
 					</div>
 					<div>
 						<h3 style="text-align:center;">Pottery Classes</h3>
-						<a href="products.html" class="button button-2">Learn More</a>
+						<div class="row row-justify-center margin">
+							<a href="products.html" class="button button-2">Learn More</a>
+						</div>
 					</div>
 				</div><!-- End Column -->
 
 				<!-- What we offer 2 -->
-				<div class="col col-lg-4"><!-- Column -->
+				<div class="col col-lg-4 col-sm-12"><!-- Column -->
 					<div class="card-img-wrap-2">
-						<img src="Images/Viva_homepage_offer_2.jpg" class="card-img">
+						<img src="Images/Viva_homepage_offer_2.jpg" alt="Image of pottery firing" class="card-img">
 					</div>
 					<div>
 						<h3 style="text-align:center;">Firing</h3>
-						<a href="products.html" class="button button-2">Learn More</a>
+						<div class="row row-justify-center margin">
+							<a href="firing.html" class="button button-2">Learn More</a>
+						</div>
 					</div>
 				</div><!-- End Column -->
 
 				<!-- What we offer 3 -->
-				<div class="col col-lg-4"><!-- Column -->
+				<div class="col col-lg-4 col-sm-12"><!-- Column -->
 					<div class="card-img-wrap-2">
-						<img src="Images/Viva_homepage_offer_3.jpg" class="card-img">
+						<img src="Images/Viva_homepage_offer_3.jpg" alt="Image of little otter book cover page" class="card-img">
 					</div>
 					<div>
 						<h3 style="text-align:center;">Shop</h3>
-						<a href="products.html" class="button button-2">Learn More</a>
+						<div class="row row-justify-center">
+							<a href="#" class="button button-2">Learn More</a>
+						</div>
 					</div>
 				</div><!-- End Column -->
 
@@ -135,32 +143,32 @@
 			<div class="row row-justify-center"><!-- row -->
 				<h3 style="text-align: center;">Sign Up For Our Newsletter Today For Latest Updates!</h3>
 
-				<div><!-- Column -->
-
-					<form class="contact-form">
-						<div>
-							<label for="Newsletter" class="input-label">Select Newsletter</label>
-							<select id="Newsletter" name="Newsletter">
-								<option value="--Please select--">--Please Select--</option>
-								<option value="Children and Teen Program">Children and Teen Program</option>
-								<option value="Coustomer List">Coustomer List</option>
-								<option value="Student Email List">Student Email List</option>
-								<option value="Viva Clayworks Newsletter">Viva Clayworks Newsletter</option>
-								<option value="Workshops Email List">Workshops Email List</option>
-							</select>
-						</div>
-						<div>
-							<label for="email" class="input-label">Email</label>
-							<input type="email" name="email" placeholder="Type your email..." class="input-field">
-						</div>
+				<form class="contact-form newsletter-form">
+					<div class="col col-lg-6 col-sm-11"><!-- Column -->
+						<label for="Newsletter" class="input-label">Select Newsletter</label>
+						<select id="Newsletter" name="Newsletter">
+							<option value="--Please select--">--Please Select--</option>
+							<option value="Children and Teen Program">Children and Teen Program</option>
+							<option value="Coustomer List">Coustomer List</option>
+							<option value="Student Email List">Student Email List</option>
+							<option value="Viva Clayworks Newsletter">Viva Clayworks Newsletter</option>
+							<option value="Workshops Email List">Workshops Email List</option>
+						</select>
+					</div>
+					<div class="col col-lg-11 col-sm-11">
+						<label for="email" class="input-label">Email</label>
+						<input type="email" name="email" placeholder="Type your email..." class="input-field">
+					</div>
 							
-					</form>
-
-					<a href="#sign up" class="button button-1">Sign Up</a>
+				</form>
 					
 				</div><!-- End Column -->
 
 			</div><!-- End row -->
+
+			<div class="row row-justify-center">
+				<a href="#" class="button button-1">Sign Up</a>
+			</div>
 
 		</div><!-- End Container -->
 
@@ -177,7 +185,9 @@
 					<!-- LOGO -->
 
 					<div>
-						<a href="index.html"><img src="Images/logo_img.svg" style="width: 22vw;"></a>
+						<div class="footer-logo">
+							<a href="index.html"><img src="Images/logo_img.svg" style="width: 200px;"></a>
+						</div>
 						<div class="footer-margin">
 							<p class="white-text text-small">© 2025 / All Rights Reserved   <a href="#" class="white-text">Privacy Policy</a>   <a href="#" class="white-text">Terms</a></p>
 						</div>
@@ -186,21 +196,23 @@
 					
 				</div><!-- End Column 1-->
 
-				<div class="col col-lg-4"><!-- column 2-->
+				<div class="col col-lg-4 col-sm-12"><!-- column 2-->
 					<h3 class="white-text">Contact Us</h3>
 					<p class="white-text"><img src="Images/call.png">780-939-5224</p>
 					<p class="white-text"><img src="Images/drafts.png">hello@risecoffee.com</p>
 					<p class="white-text"><img src="Images/distance.png">304 Main St<br> Wellington, ON  K0K 3L0</p>
 				</div><!-- End Column 2-->
 
-				<div class="col col-lg-3"><!-- column 3-->
+				<div class="col col-lg-3 col-sm-12"><!-- column 3-->
 					<h3 class="white-text">Useful Links</h3>
-					<p><a href="index.html" class="white-text" style="text-decoration: None;">Home</a></p>
-					<p><a href="about.html" class="white-text" style="text-decoration: None;">About Us</a></p>
-					<p><a href="" class="white-text" style="text-decoration: None;">Contact Us</a></p>
-					<p><a href="products.html" class="white-text" style="text-decoration: None;">Pottery Classes + Workshop</a></p>
-					<p><a href="firing.html" class="white-text" style="text-decoration: None;">Firing</a></p>
-					<p><a href="" class="white-text" style="text-decoration: None;">Shop</a></p>
+					<ul class="text-white useful-link-style">
+						<li style="margin-bottom: 8px;"><a href="index.html" class="link-no-link">Home</a></li>
+						<li style="margin-bottom: 8px;"><a href="about.html" class="link-no-link">About Us</a></li>
+						<li style="margin-bottom: 8px;"><a href="#" class="link-no-link">Contact Us</a><</li>
+						<li style="margin-bottom: 8px;"><a href="products.html" class="link-no-link">Pottery Classes + Workshop</a></li>
+						<li style="margin-bottom: 8px;"><a href="firing.html" class="link-no-link">Firing</a></li>
+						<li><a href="" class="link-no-link">Shop</a></li>
+	  				</ul>
 				</div><!-- End Column 3-->
 				
 			</div><!-- End row -->
